@@ -1,0 +1,7 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+i=[1,2,3,4,5,6,7,8,9,10]
+
+sns.histplot(x=i,kde=True,bins=50)
+
+plt.show()

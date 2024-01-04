@@ -1,0 +1,25 @@
+Replacing a flip-flop with a logic constant 0.                                                                                  |
+|           |        |      |To prevent this optimization, set the 'optimize_constant_0_flops' root attribute to 'false' or 'optimize_constant_0_seq'        |
+|           |        |      | instance attribute to 'false'. You can also see the complete list of deleted sequential with command 'report sequential        |
+|           |        |      | -deleted' (on Reason 'constant0').     
+
+
+
+|Deleting instances not driving any primary outputs.                                                                             |
+|           |        |      |Optimizations such as constant propagation or redundancy removal could change the connections so a hierarchical instance does   |
+|           |        |      | not drive any primary outputs anymore. To see the list of deleted hierarchical instances, set the 'information_level'          |
+|           |        |      | attribute to 2 or above. If the message is truncated set the message attribute 'truncate' to false to see the complete list.   |
+|           |        |      | To prevent this optimization, set the 'delete_unloaded_insts' root/subdesign attribute to 'false' or 'preserve' instance       |
+|           |        |      | attribute to 'true'.      
+
+
+
+Equivalent sequential instances have been merged.                                                                               |
+|           |        |      |To prevent merging of sequential instances, set the 'optimize_merge_flops' and 'optimize_merge_latches' root attributes to      |
+|           |        |      | 'false' or the 'optimize_merge_seq' instance attribute to 'false'.
+
+
+|Hierarchical instance automatically ungrouped.                                                                                  |
+|           |        |      |Hierarchical instances can be automatically ungrouped to allow for better area or timing optimization. To prevent this ungroup, |
+|           |        |      | set the root-level attribute 'auto_ungroup' to 'none'. You can also prevent individual ungroup with setting the attribute      |
+|           |        |      | 'ungroup_ok' of instances or modules to 'false'.

@@ -1,0 +1,11 @@
+./tanhx_verilog/tanhx_4_hw.vvp
+./tanhx_verilog/tanhx_4_hw_tb.vcd
+./tanhx_verilog/tanhx_hw.vvp
+./tanhx_verilog/tanhx_hw_tb.vcd
+block_diagram.drawio
+./sigmoid_verilog/sig_hw.vvp
+./sigmoid_verilog/sig_hw_tb.vcd
+./testbench/sig_hw.vvp
+./testbench/sig_tb.vcd
+./testbench/tanhx_hw.vvp
+./testbench/tanhx_tb.vcd

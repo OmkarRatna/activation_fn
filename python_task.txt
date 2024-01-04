@@ -1,0 +1,23 @@
+pending task:
+
+	1. modify python code for data of 550000 random data
+	2. seperate output result for all values
+	3. add mahati simulation result in given output data
+
+
+checklist: for k=4
+
+	1. generate random number > python file=random_no.py  output file=input_decoded.txt
+	2. convert decoded input into IEEE format > python file=single_precision_fp.py output file =input_bin.txt
+	3. run testbench based simulation > verilog file= testbench/tanhx_tb.v output file =output_bin.txt
+	4. convert IEEE format output to real value > python file= decimal_fp_convert.py output file =output_decoded.txt
+	5. generate golden refernce output for reference > python file=reference_op_tanhx.py output file =refernece_output.txt  
+	6. run script to generate error metrics > python file=error_metrics.py output file=error_metric.py
+
+
+checklist: for k=8,12,16
+	1. modify testbench/tanhx_tb.v 
+	2. run testbench based simulation > verilog file= testbench/tanhx_tb.v output file =output_bin.txt
+	3. convert IEEE format output to real value > python file= decimal_fp_convert.py output file =output_decoded.txt
+	4. run script to generate error metrics > python file=error_metrics.py output file=error_metric.py
+	5. seperate result into output data folder
